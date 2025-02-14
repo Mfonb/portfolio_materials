@@ -1,0 +1,672 @@
+body {
+    background-color: black;
+}
+
+#header {
+    height: 15vh;
+    display: grid;
+    align-content: flex-end;
+    grid-column-gap: 20px;
+    grid-template-columns: 5fr 0.5fr 0.8fr 1fr;
+}
+
+#title {
+    color: whitesmoke;
+    size: 30px;
+    font-size: 30px;
+    color: rgb(236, 174, 236);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#home {
+    color: rgb(236, 174, 236);
+    size: 40px;
+    font-size: 26px;
+    text-decoration: none;
+    background-color: rgb(19, 18, 18);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-content: center;
+}
+
+#home:hover {
+    background-color: rgb(51, 50, 50);
+    size: 40px;
+    font-size: 26px;
+    border-radius: 5px;
+    background-color: rgb(26, 25, 26);
+}
+
+#contacts {
+    color: rgb(236, 174, 236);
+    size: 40px;
+    font-size: 26px;
+    text-decoration: none;
+    background-color: rgb(19, 18, 18);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+
+#contacts:hover {
+    background-color: rgb(128, 12, 128);
+    size: 40px;
+    font-size: 26px;
+    background-color: rgb(26, 25, 26);
+}
+
+#socialButton {
+    color: rgb(236, 174, 236);
+    size: 36px;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: rgb(19, 18, 18);
+    border: none;
+    border-radius: 5px;
+}
+
+/* social media button  and items*/
+#socialButton:hover {
+    background-color: rgb(26, 25, 26);
+    size: 36px;
+    font-size: 24px;
+}
+
+/* Project items */
+#sql {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#mschool {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#python {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#game {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#text {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+aside {
+    display: none;
+}
+
+.profile {
+    display: flex;
+    max-width: 55%; /* Ensures 200px margin on both sides */
+    margin: 0 auto; /* Centers the section */
+    padding: 20px; /* Adds some padding inside the section */
+    box-sizing: border-box; /* Ensures padding does not increase the width */
+    background-color: black;
+    /*background-color: rgb(240, 217, 237);*/
+    color: white;
+    border-radius: 5px;
+}
+
+#about {
+    font-size: 30px;
+}
+
+#desc {
+    font-size: 20px;
+}
+
+#media {
+    position: absolute;  /* Allows precise placement */
+    /*left: 1075px;        /* Position 1000px from the left */
+    right: 1%;         /* Position 10px from the right */
+    max-width: 1075px;
+    flex-shrink: 1;
+    /*width: calc(100% - 1010px); /* Adjust width dynamically */
+    max-width: 900px;    /* Ensuring content does not exceed 900px */
+    padding: 20px;       /* Add some padding for better readability */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-decoration: none;
+}
+
+
+
+/* Section styling to center content */
+.salients {
+    max-width: 55%; /* Leaves 200px margin on each side */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding: 20px; /* Adds spacing inside the section */
+    text-align: center; /* Centers text inside the section */
+    box-sizing: border-box; /* Prevents padding from affecting width calculation */
+}
+
+/* Button styling for Skills */
+.btnSkills {
+    display: flex; /* Allows arrow to be positioned on the right */
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 100%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    padding: 10px 20px; /* Adds padding inside the button */
+    /*text-decoration: none; /* Removes underline */
+    background-color: rgb(94, 92, 92); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    /*margin: 10px 0;  Adds spacing above and below the button */
+    cursor: pointer; /* Adds pointer cursor on hover */
+    font-size: 24px;
+}
+
+#btnProjects {
+    display: grid; /* Allows arrow to be positioned on the right */
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 100%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    padding: 10px 20px; /* Adds padding inside the button */
+    /*text-decoration: none; /* Removes underline */
+    background-color: rgb(94, 92, 92); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    /*margin: 10px 0;  Adds spacing above and below the button */
+    cursor: pointer; /* Adds pointer cursor on hover */
+    font-size: 24px;
+}
+
+#btnProjects:hover {
+    background-color: rgb(66, 65, 65); /* Changes background on hover */
+}
+
+#projects {
+    display: none;
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 60%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    /*padding: 10px 20px; /* Adds padding inside the button */
+    /*text-decoration: none; /* Removes underline */
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    /*margin: 10px 0;  /*Adds spacing above and below the button */
+    cursor: pointer; /* Adds pointer cursor on hover */
+    font-size: 24px;
+    height: 200px;
+}
+
+#python {
+    color: rgb(228, 56, 99);
+    background-color: black;
+}
+#python:hover {
+    background-color: rgb(41, 40, 40);
+}
+
+#sql {
+    color: rgb(84, 46, 187);
+    background-color: black;
+}
+#sql:hover {
+    background-color: rgb(41, 40, 40);
+}
+
+#mschool {
+    color: rgb(201, 25, 25);
+    background-color: black;
+}
+#mschool:hover {
+    background-color: rgb(41, 40, 40);
+}
+
+#game {
+    color: rgb(209, 212, 27);
+    background-color: black;
+}
+#game:hover {
+    background-color: rgb(41, 40, 40);
+}
+
+.btnSkills:hover {
+    background-color: rgb(66, 65, 65) /* Changes background on hover */
+}
+
+/*  Section experience and itens */
+#togglebtnExperience {
+    display: grid; /* Allows arrow to be positioned on the right */
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 100%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    padding: 10px 20px; /* Adds padding inside the button */
+    text-decoration: underline;
+    /*text-decoration: none; /* Removes underline */
+    background-color: rgb(94, 92, 92); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    /*margin: 10px 0;  Adds spacing above and below the button */
+    cursor: pointer; /* Adds pointer cursor on hover */
+    font-size: 24px;
+}
+
+#togglebtnExperience:hover {
+    background-color: rgb(66, 65, 65) /* Changes background on hover */
+}
+
+#experience {
+    display: none;
+    background-color: rgb(14, 13, 13);
+}
+
+/*  Section academics and itens */
+#togglebtnAcademics {
+    display: grid; /* Allows arrow to be positioned on the right */
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 100%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    padding: 10px 20px; /* Adds padding inside the button */
+    /*text-decoration: none; /* Removes underline */
+    text-decoration: underline;
+    background-color: rgb(94, 92, 92); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    /*margin: 10px 0;  Adds spacing above and below the button */
+    cursor: pointer; /* Adds pointer cursor on hover */
+    font-size: 24px;
+}
+
+#togglebtnAcademics:hover {
+    background-color: rgb(66, 65, 65) /* Changes background on hover */
+}
+
+#academics {
+    display: none;
+    background-color: whitesmoke;
+}
+
+/*  Section Resume and items */
+#btnResume {
+    display: grid; /* Allows arrow to be positioned on the right */
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 100%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    padding: 10px 20px; /* Adds padding inside the button */
+    text-decoration: none; /* Removes underline */
+    background-color: rgb(94, 92, 92); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    /*margin: 10px 0;  Adds spacing above and below the button */
+    cursor: pointer; /* Adds pointer cursor on hover */
+    font-size: 24px;
+}
+
+#btnResume:hover {
+    background-color: rgb(66, 65, 65) /* Changes background on hover */
+}
+
+#resume {
+    background-color: whitesmoke;
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 60%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    font-size: 22px;
+    color: rgb(28, 28, 151);
+}
+
+.show {
+    display: grid;
+}
+
+.hidden {
+    display: none;
+}
+
+#resume2 {
+    background-color: black;
+    color: whitesmoke;
+    justify-content: space-between; /* Spreads content across button */
+    align-items: center; /* Vertically centers text and arrow */
+    width: 25%; /* Makes button span the full width of the section */
+    transform-origin: left; /* Ensures scaling starts from the left */
+    transform: scaleX(0.9); /* Shrinks width by 50% */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    font-size: 16px; /* Button font size */
+    margin: 0 auto; /* Centers the section horizontally */
+    font-size: 24px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    width: 300px;
+    font-size: 20px;
+}
+
+#gmail {
+    background-color: rgb(94, 92, 92);
+    text-decoration: underline;
+}
+
+#contact {
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: pink;
+}
+
+#phone {
+    background-color: rgb(94, 92, 92);
+    text-decoration: underline;
+}
+
+#email {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+#phone2 {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+/* Tablet Media Queries */
+@media (max-width: 900px) {
+    #header {
+        height: 10vh;
+        display: grid;
+        align-content: flex-end;
+        grid-column-gap: 5px;
+    }
+
+    #title {
+        size: 30px;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #home {
+        size: 20px;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-content: center;
+    }
+
+    #contacts {
+        size: 20px;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-content: center;
+    }
+    
+    #socialButton {
+        size: 36px;
+        font-size: 22px;
+        text-decoration: none;
+    }
+
+    .profile {
+        display: flex;
+        max-width: 70%; /* Ensures 200px margin on both sides */
+    }
+    
+    #about {
+        font-size: 25px;
+    }
+    
+    #desc {
+        font-size: 18px;
+    }
+
+    #media {
+        right: 1%;         /* Position 10px from the right */
+    }
+
+    .iLogo {
+        height: 30px;
+        width: 30px;
+    }
+    
+    /* Section styling to center content */
+    .salients {
+        max-width: 55%; /* Leaves 200px margin on each side */
+        margin: 0 auto; /* Centers the section horizontally */
+        padding-left: 0;
+        padding-right: 30px;
+        padding-top: 0;
+    }
+
+    /* Button styling for Skills */
+    .btnSkills {
+        font-size: 22px;
+    }
+
+    #btnProjects {
+        font-size: 22px;
+    }
+    
+    #projects {
+        font-size: 22px;
+        height: auto;
+    }
+    
+    /*  Section experience and itens */
+    #togglebtnExperience {
+        font-size: 22px;
+    }
+    
+    #togglebtnExperience:hover {
+        background-color: rgb(66, 65, 65) /* Changes background on hover */
+    }
+    
+    /*  Section academics and itens */
+    #togglebtnAcademics {
+        font-size: 22px;
+    }
+    
+    /*  Section Resume and items */
+    #btnResume {
+        font-size: 22px;
+    }
+    
+    #resume {
+        font-size: 18px;
+    }
+    
+    #resume2 {
+        font-size: 18px;
+    }
+    
+    footer {
+        width: 300px;
+        font-size: 18px;
+    }
+}
+
+
+/* Mobile Media Queries */
+@media (max-width: 550px) {
+    #header {
+        height: 7vh;
+        grid-column-gap: 2px;
+    }
+
+    #title {
+        size: 30px;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #home {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #home:hover {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #contacts {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #contacts:hover {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #socialButton {
+        size: 36px;
+        font-size: 17px;
+    }
+
+    #socialButton:hover {
+        size: 36px;
+        font-size: 17px;
+    }
+
+    .profile {
+        display: flex;
+        max-width: 80%; /* Ensures 200px margin on both sides */
+    }
+    
+    #about {
+        font-size: 20px;
+    }
+    
+    #desc {
+        font-size: 16px;
+    }
+
+    #media {
+        right: 1%;         /* Position 10px from the right */
+    }
+
+    .iLogo {
+        height: 20px;
+        width: 20px;
+    }
+    
+    /* Section styling to center content */
+    .salients {
+        max-width: 60%; /* Leaves 200px margin on each side */
+        margin: 0 auto; /* Centers the section horizontally */
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    /* Button styling for Skills */
+    .btnSkills {
+        font-size: 19px;
+        height: 15px;
+        text-decoration: none;
+    }
+
+    #btnProjects {
+        font-size: 19px;
+        height: 15px;
+        text-decoration: none;
+    }
+    
+    #projects {
+        font-size: 19px;
+        height: auto;
+    }
+    
+    /*  Section experience and itens */
+    #togglebtnExperience {
+        font-size: 19px;
+        height: 15px;
+        text-decoration: none;
+    }
+    
+    #togglebtnExperience:hover {
+        font-size: 19px;
+        height: 15px;
+        text-decoration: none;
+    }
+    
+    /*  Section academics and itens */
+    #togglebtnAcademics {
+        font-size: 19px;
+        height: 15px;
+        text-decoration: none;
+    }
+    
+    /*  Section Resume and items */
+    #btnResume {
+        font-size: 19px;
+        height: 15px;
+        text-decoration: none;
+    }
+    
+    #resume {
+        font-size: 17px;
+    }
+    
+    #resume2 {
+        font-size: 17px;
+    }
+    
+    footer {
+        width: 300px;
+        font-size: 16px;
+    }
+}

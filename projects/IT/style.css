@@ -1,0 +1,337 @@
+body {
+    background-color: black;
+}
+
+#header {
+    height: 15vh;
+    display: grid;
+    align-content: flex-end;
+    grid-column-gap: 20px;
+    grid-template-columns: 5fr 0.5fr 0.8fr 1fr;
+}
+
+#title {
+    size: 30px;
+    font-size: 30px;
+    color: pink;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#home {
+    color: pink;
+    size: 40px;
+    font-size: 26px;
+    text-decoration: none;
+    background-color: rgb(19, 18, 18);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-content: center;
+}
+
+#home:hover {
+    background-color: rgb(51, 50, 50);
+    size: 40px;
+    font-size: 26px;
+    border-radius: 5px;
+    background-color: rgb(26, 25, 26);
+}
+
+#contacts {
+    color: pink;
+    size: 40px;
+    font-size: 26px;
+    text-decoration: none;
+    background-color: rgb(19, 18, 18);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+
+#contacts:hover {
+    background-color: rgb(128, 12, 128);
+    size: 40px;
+    font-size: 26px;
+    background-color: rgb(26, 25, 26);
+}
+
+#socialButton {
+    color: pink;
+    size: 36px;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: rgb(19, 18, 18);
+    border: none;
+    border-radius: 5px;
+}
+
+/* social media button  and items*/
+#socialButton:hover {
+    background-color: rgb(26, 25, 26);
+    size: 36px;
+    font-size: 24px;
+}
+
+aside {
+    display: none;
+}
+
+#media {
+    position: absolute;  /* Allows precise placement */
+    /*left: 1075px;        /* Position 1000px from the left */
+    right: 1%;         /* Position 1% from the right */
+    max-width: 1075px;
+    /*width: calc(100% - 1010px); /* Adjust width dynamically */
+    max-width: 900px;    /* Ensuring content does not exceed 900px */
+    padding: 20px;       /* Add some padding for better readability */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-decoration: none;
+}
+
+#grid {
+    /*height: 15vh; */
+    display: grid;
+    align-content: flex-end;
+    grid-column-gap: 20px;
+    grid-template-columns: 2fr 5fr;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#image {
+    width: 400px; 
+    height: 400px;
+}
+
+h1 {
+    display: grid;
+    color: rgb(219, 207, 207);
+    margin: 0 auto;
+    /*max-width: 50%; /* Ensures 200px margin on both sides */
+}
+
+#date {
+    display: grid;
+    color: whitesmoke;
+    /*max-width: 50%; /* Ensures 200px margin on both sides */
+    margin: 0 auto; /* Centers the section */
+    font-style: italic;
+}
+
+#brief {
+    color: whitesmoke;
+    display: grid;
+    /*max-width: 50%; /* Ensures 200px margin on both sides */
+    margin: 0 auto; /* Centers the section */
+}
+
+.details {
+    color: whitesmoke;
+    display: grid;
+    /*max-width: 50%; /* Ensures 200px margin on both sides */
+    margin: 0 auto; /* Centers the section */
+}
+
+.ref {
+    background-color: rgb(212, 208, 209);
+    /*margin: 0 auto; /* Centers the section */
+    max-width: 40%;
+    display: grid;
+}
+
+#pdf {
+    /*margin: 0 auto; /* Centers the section */
+    max-width: 90%;
+    display: grid;
+    color: rgb(41, 2, 2);
+}
+
+#word {
+    /*margin: 0 auto; /* Centers the section */
+    max-width: 90%;
+    display: grid;
+    color: rgb(41, 2, 2);
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    width: 300px;
+    font-size: 20px;
+}
+
+#gmail {
+    background-color: rgb(94, 92, 92);
+    text-decoration: underline;
+}
+
+#contact {
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: pink;
+}
+
+#phone {
+    background-color: rgb(94, 92, 92);
+    text-decoration: underline;
+}
+
+#email {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+#phone2 {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+/* Tablet Media Queries */
+@media (max-width: 900px) {
+    #header {
+        height: 10vh;
+        display: grid;
+        align-content: flex-end;
+        grid-column-gap: 5px;
+    }
+
+    #title {
+        size: 30px;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #home {
+        size: 20px;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-content: center;
+    }
+
+    #contacts {
+        size: 20px;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-content: center;
+    }
+    
+    #socialButton {
+        size: 36px;
+        font-size: 22px;
+        text-decoration: none;
+    }
+    
+    #image {
+        width: 170px; 
+        height: 220px;
+    }
+
+    .iLogo {
+        height: 30px;
+        width: 30px;
+    }
+
+    #grid {
+        max-width: 85%;
+        font-size: 15px;
+        grid-template-rows: auto;
+    }
+
+    footer {
+        width: 300px;
+        font-size: 16px;
+    }
+}
+
+
+/* Mobile Media Queries */
+@media (max-width: 550px) {
+    #header {
+        height: 7vh;
+        grid-column-gap: 2px;
+    }
+
+    #title {
+        size: 30px;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #home {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #home:hover {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #contacts {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #contacts:hover {
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #socialButton {
+        size: 36px;
+        font-size: 17px;
+    }
+
+    #socialButton:hover {
+        size: 36px;
+        font-size: 17px;
+    }
+
+    #media {
+        right: 1%;         /* Position 10px from the right */
+    }
+
+    #image {
+        width: 120px; 
+        height: 220px;
+    }
+
+    .iLogo {
+        height: 20px;
+        width: 20px;
+    }
+
+    #grid {
+        font-size: 16px;
+    }
+
+    #pdf {
+        max-width: 75%;
+    }
+
+    #word {
+        max-width: 75%;
+    }
+
+    footer {
+        width: 300px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Projects</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <strong id="title">Projects</strong>
+        
+        <a href="../../index.html" id="home">Home</a>
+
+        <a href="#footer" id="contacts">Contacts</a>
+
+        <button id="socialButton">
+            Social Media <span id="socialsArrow"></span>
+        </button>
+    </header>
+
+    <aside id="media">
+        <a href="https://www.linkedin.com/in/andrew-brown-9332509b/" target="_blank">
+            <img class="iLogo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn_logo" width="40" height="40">
+            <span id="text"></span>
+        </a>
+
+        <a href="https://github.com/Mfonb" target="_blank">
+            <img class="iLogo" src="https://jumpcloud.com/wp-content/uploads/2017/06/github-logo.png" alt="gitHub_logo" width="40" height="40">
+            <span id="text"></span>
+        </a>
+    </aside>
+
+    <br>
+
+    <section id="grid">
+        <img id="image" src="../../files/perov.png" alt="perovskite_image">
+
+        <div id="notes">
+
+            <h1>Functional Materials Discovery Using Machine Learning.</h1>
+
+            <p id="date">September 2021</p>
+
+            <br>
+
+            <h2 id="brief">Brief</h2>
+            <article class="details">
+                <p>The project was aimed at discovering new perovskite materials for renewable energy application.
+                    Perovskites are semiconductor materials efficient in the conversion of solar energy.
+                    Some properties of perovskite materials have earned perovskites attention in the the quest by
+                    scientists in the discovery of highly functional and low cost materials for solar energy 
+                    harvesting, and storage.
+                </p>
+                <p>The project involved detail data analysis in feature engineering and algorithm selection. The data 
+                    were sourced from the Materials Project repository. Also, Machine learning algorithms were used to 
+                    accurately produce materials which displayed the desired properties; the property which 
+                    classes a material a metal, semiconductor, or a non-metal.
+                </p>
+                <p>
+                    The Support Vector Regression (SVR), the K-Nearest Neightbor (KNN), and the Random Forest Regression (RF)
+                    algorithms were used in the prediction of the perovskite materials. The RF algorithm best performed with an
+                    R<sup>2</sup>  value of 0.842. However, the RF algorithm has been proven in studies as a better estimator or predictor
+                    of the class of perovskite material studied (the ABO<sub>3</sub> group). Thus, affirming the accuracy of 
+                    feature selection made for this project.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p id="contact">Contacts:</p>
+        <a id="email" href="mailto:sandbreatherbrown@gmail.com"><img id="gmail" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail Logo" width="30">sandbreatherbrown@gmail.com</a>
+        <br>
+        <a id="phone2" href="tel:+447512096348"><img id="phone" src="https://cdn-icons-png.flaticon.com/512/159/159832.png" alt="Phone Logo" width="30">+447512096348</a>
+    </footer>
+
+
+</body>
+</html>
